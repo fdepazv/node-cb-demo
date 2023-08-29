@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "dce45dce-880f-4986-8cf2-3d5731872fbd",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13246341"
+	},
+	"item": [
+		{
+			"name": "Id endpoint",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/demo?id=abc",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"demo"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2000",
+							"description": "failure",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "10",
+							"description": "success",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1000",
+							"description": "timeout",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "9000",
+							"description": "looped",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "abc",
+							"description": "NaN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/status",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
